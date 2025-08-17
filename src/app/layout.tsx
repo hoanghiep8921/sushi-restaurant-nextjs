@@ -1,9 +1,6 @@
 // next
 import type { Metadata } from 'next';
 
-// next-intl
-import { NextIntlClientProvider } from 'next-intl';
-
 // clsx
 import clsx from 'clsx';
 
@@ -11,7 +8,7 @@ import clsx from 'clsx';
 import '@/styles/globals.css';
 
 // fonts
-import { bizudMincho, bitter } from '@/ui/fonts';
+import { bitter } from '@/ui/fonts';
 
 // metadata
 export const metadata: Metadata = {
@@ -30,7 +27,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    alternateLocale: 'ja_JP',
     url: '/',
     title: 'Sushi Doshira by Rashid Shamloo',
     siteName: 'Sushi Doshira by Rashid Shamloo',
@@ -54,32 +50,20 @@ export const metadata: Metadata = {
   },
 };
 
-export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'ja' }];
-}
-
-export default async function LocaleLayout({
+export default function RootLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  let messages;
-  try {
-    messages = (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {}
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body
         className={clsx(
           'bg-bgGray text-white',
-          locale === 'ja' ? bizudMincho.className : bitter.className,
+          bitter.className,
         )}
       >
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );

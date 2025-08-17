@@ -42,7 +42,7 @@ const NavMenu = () => {
             toggled={isMobileMenuOpen}
             aria-controls="mobile-menu"
             aria-expanded={isMobileMenuOpen}
-            label={t('hamburgerMenu')}
+            label="Menu"
           />
         </div>
         <ReservationButton className="md:hidden" />

@@ -47,7 +47,7 @@ const MobileMenu = ({
                     navHover,
                   )}
                 >
-                  {t(item)}
+                  {item}
                 </a>
                 <div className="aspect-square w-2 select-none rounded-full bg-accent" />
               </li>

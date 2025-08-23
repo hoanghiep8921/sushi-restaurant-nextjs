@@ -1,9 +1,6 @@
 // react
 import { useEffect, useState } from 'react';
 
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // framer-motion
 import { AnimatePresence } from 'framer-motion';
 
@@ -11,13 +8,11 @@ import { AnimatePresence } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 
 // components
-import LanguageSelect from './LanguageSelect';
 import MobileMenu from './MobileMenu';
 import DesktopMenu from './DesktopMenu';
 import ReservationButton from './ReservationButton';
 
 const NavMenu = () => {
-  const t = useTranslations('Header');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -46,9 +41,7 @@ const NavMenu = () => {
           />
         </div>
         <ReservationButton className="md:hidden" />
-        <div className="hidden flex-grow md:block">
-          <LanguageSelect />
-        </div>
+        
         <DesktopMenu />
       </div>
     </>

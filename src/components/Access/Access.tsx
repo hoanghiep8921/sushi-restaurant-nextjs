@@ -1,21 +1,17 @@
 // next
 import Image from 'next/image';
 
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // components
 import AccessInformation from './AccessInformation';
 import Reveal from '@/components/common/Reveal';
 
 const Access = () => {
-  const t = useTranslations('Access');
   return (
     <section
       id="access"
       className="relative flex items-center justify-center py-[64px] md:py-[128px]"
     >
-      <h2 className="sr-only">{t('title')}</h2>
+      <h2 className="sr-only">Access</h2>
       <Image
         src="/images/access/bg.jpg"
         alt="Background"
@@ -30,7 +26,7 @@ const Access = () => {
         </Reveal>
         <Reveal effect="fadeLTR">
           <Image
-            src="/images/access/map.png"
+            src="/images/access/map.jpg"
             alt="Map"
             width="500"
             height="400"

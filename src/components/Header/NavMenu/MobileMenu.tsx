@@ -1,11 +1,5 @@
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // framer-motion
 import { m, LazyMotion, domAnimation } from 'framer-motion';
-
-// components
-import LanguageSelect from './LanguageSelect';
 
 // clsx
 import clsx from 'clsx';
@@ -21,7 +15,6 @@ const MobileMenu = ({
 }: {
   setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  const t = useTranslations('NavMenu');
   return (
     <LazyMotion features={domAnimation}>
       <m.div
@@ -52,9 +45,7 @@ const MobileMenu = ({
                 <div className="aspect-square w-2 select-none rounded-full bg-accent" />
               </li>
             ))}
-            <li>
-              <LanguageSelect />
-            </li>
+            
           </ul>
         </nav>
       </m.div>

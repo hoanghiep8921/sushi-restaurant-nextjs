@@ -1,14 +1,14 @@
 [
   {
     "title": "nigiriSushi",
-    "image": "/images/sushi-types/nigiri-sushi.jpg"
+    "image": "/images/sushi-types/salad.png"
   },
   {
     "title": "makiRolls",
-    "image": "/images/sushi-types/maki-rolls.jpg"
+    "image": "/images/sushi-types/fried.png"
   },
   {
     "title": "sashimiPlatter",
-    "image": "/images/sushi-types/sashimi-platter.jpg"
+    "image": "/images/sushi-types/khaivi.png"
   }
 ]

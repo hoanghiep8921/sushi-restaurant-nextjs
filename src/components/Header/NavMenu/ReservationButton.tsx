@@ -1,11 +1,7 @@
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // clsx
 import clsx from 'clsx';
 
 const ReservationButton = ({ className }: { className?: string }) => {
-  const t = useTranslations('NavMenu');
   return (
     <a
       href="#reservation"
@@ -18,7 +14,7 @@ const ReservationButton = ({ className }: { className?: string }) => {
         className="ml-[2px] aspect-square w-[18px] bg-[length:18px] bg-no-repeat transition-all duration-300 md:ml-1 md:w-[24px] md:bg-[length:24px]"
         aria-hidden="true"
       ></div>
-      {t('reservation')}
+      Reservation
     </a>
   );
 };

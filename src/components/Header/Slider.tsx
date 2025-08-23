@@ -4,9 +4,6 @@ import Image from 'next/image';
 // react
 import { useRef, useEffect } from 'react';
 
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // swiper
 import { Swiper, SwiperSlide, SwiperClass } from 'swiper/react';
 import {
@@ -27,7 +24,6 @@ import 'swiper/css/effect-fade';
 import { numberOfSlides } from '@/settings/slider';
 
 const Slider = () => {
-  const t = useTranslations('Header');
   const slideRefs = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
@@ -69,9 +65,9 @@ const Slider = () => {
             ref={(ref) => {
               if (ref) slideRefs.current[i] = ref;
             }}
-            src={`/images/header/${String(i + 1).padStart(2, '0')}.jpg`}
+            src={`/images/header/${String(i + 1).padStart(2, '')}.png`}
             fill
-            alt={`${t('sushiImage')} ${i + 1}`}
+            alt={`Sushi Image ${i + 1}`}
             sizes="100vw"
             priority={i === 0}
             className="object-cover will-change-transform"

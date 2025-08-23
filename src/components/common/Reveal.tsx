@@ -1,10 +1,10 @@
 'use client';
 
 // react
-import { forwardRef } from 'react';
+import { forwardRef, useState, useEffect } from 'react';
 
 // media query
-import { isMobile } from 'react-device-detect';
+import { isMobile as isMobileDetect } from 'react-device-detect';
 
 // framer motion
 import { m, MotionProps, LazyMotion, domAnimation } from 'framer-motion';
@@ -19,10 +19,10 @@ interface RevealProps extends React.HTMLAttributes<HTMLElement> {
   delay?: number;
   threshold?: number;
   once?: boolean;
-  ease?: string;
+  ease?: any;
   component?: string;
 }
-const Reveal = forwardRef<HTMLElement, RevealProps & MotionProps>(
+const Reveal = forwardRef<any, RevealProps & MotionProps>(
   (
     {
       effect = 'fadeIn',
@@ -38,6 +38,12 @@ const Reveal = forwardRef<HTMLElement, RevealProps & MotionProps>(
     },
     ref,
   ) => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      import('react-device-detect').then(mod => setIsMobile(mod.isMobile));
+    }, []);
+
     const MotionElement = m<RevealProps>(component);
     return (
       <LazyMotion features={domAnimation}>

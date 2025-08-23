@@ -1,9 +1,6 @@
 // react
 import { useCallback, useEffect, useRef } from 'react';
 
-// next-intl
-import { useTranslations } from 'next-intl';
-
 // icon
 import { FaArrowUp } from 'react-icons/fa6';
 
@@ -13,7 +10,6 @@ interface ScrollToTopProps {
 }
 
 const ScrollToTop = ({ triggerAt = 100 }: ScrollToTopProps) => {
-  const t = useTranslations('Other');
   const ref = useRef<HTMLButtonElement>(null);
   const handleScroll = useCallback(() => {
     if (!ref.current || window.innerWidth < 1024) return;
@@ -36,7 +32,7 @@ const ScrollToTop = ({ triggerAt = 100 }: ScrollToTopProps) => {
   return (
     <button
       ref={ref}
-      aria-label={t('backToTop')}
+      aria-label="Back to top"
       className="hover:brighness-110 fixed bottom-4 right-4 z-20 hidden aspect-square w-[48px] items-center justify-center rounded-full border-[1px] border-borderGray bg-bgDarkGray text-white opacity-0 transition-all duration-500 hover:bg-accent lg:flex xl:bottom-10 xl:right-10"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >

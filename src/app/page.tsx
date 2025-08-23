@@ -44,7 +44,7 @@ const Footer = dynamic(() => import('@/components/Footer/Footer'), {
   loading,
 });
 
-export default function Home() {
+function HomeComponent() {
   return (
     <>
       <Header />
@@ -62,3 +62,5 @@ export default function Home() {
     </>
   );
 }
+
+export default dynamic(() => Promise.resolve(HomeComponent), { ssr: false });

@@ -1,5 +1,10 @@
+'use client';
+
 // next
 import Image from 'next/image';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 const MenuHeader = ({
   dataId,
@@ -8,7 +13,8 @@ const MenuHeader = ({
   dataId: string;
   headerImage: string;
 }) => {
-  const title = dataId === 'mainDishes' ? 'Main Dishes' : 'Drinks';
+  const { t } = useTranslation();
+  const title = dataId === 'mainDishes' ? t('menu.mainDishes') : t('menu.drinks');
   return (
     <div className="relative flex h-[150px] items-center justify-center overflow-hidden rounded-[32px] text-[clamp(54px,40px_+_3vw,80px)] md:h-[240px]">
       <Image
@@ -18,7 +24,7 @@ const MenuHeader = ({
         sizes="(max-width: 480px) 100vw,(max-width: 768px) 50vw, 20vw"
         className="h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-[#1a1008]/40" />
       <h3 className="relative">{title}</h3>
     </div>
   );

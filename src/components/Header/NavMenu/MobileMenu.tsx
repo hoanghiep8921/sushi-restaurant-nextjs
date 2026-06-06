@@ -1,8 +1,13 @@
+'use client';
+
 // framer-motion
 import { m, LazyMotion, domAnimation } from 'framer-motion';
 
 // clsx
 import clsx from 'clsx';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // hover style
 import { navHover } from '@/styles/navHover';
@@ -15,11 +20,13 @@ const MobileMenu = ({
 }: {
   setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  const { t } = useTranslation();
+
   return (
     <LazyMotion features={domAnimation}>
       <m.div
         id="mobile-menu"
-        className="absolute top-0 z-10 flex h-screen w-full items-start justify-center bg-black/80 pt-12 text-[clamp(1.25rem,2vw,1.5rem)] text-white"
+        className="absolute top-0 z-10 flex h-screen w-full items-start justify-center bg-[#1a1008]/80 pt-12 text-[clamp(1.25rem,2vw,1.5rem)] text-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -40,7 +47,7 @@ const MobileMenu = ({
                     navHover,
                   )}
                 >
-                  {item}
+                  {t(`nav.${item}`)}
                 </a>
                 <div className="aspect-square w-2 select-none rounded-full bg-accent" />
               </li>

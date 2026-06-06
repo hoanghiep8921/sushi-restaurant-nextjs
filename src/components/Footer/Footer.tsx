@@ -1,5 +1,10 @@
+'use client';
+
 // next
 import Image from 'next/image';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // fonts
 import { bitter } from '@/ui/fonts';
@@ -8,8 +13,12 @@ import { bitter } from '@/ui/fonts';
 import SocialMediaLinks from './SocialMediaLinks';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="flex items-center justify-center bg-bgDarkGray py-[24px]">
+    <footer
+      className="flex items-center justify-center bg-bgDarkGray py-[24px]"
+    >
       <div className="flex w-[1296px] max-w-[95%] flex-col items-center justify-between gap-[24px] lg:flex-row">
         <div className="flex flex-shrink-0 items-center justify-center gap-[16px] lg:gap-[20px]">
           <Image
@@ -21,7 +30,7 @@ const Footer = () => {
             sizes="120px"
             className="w-[80px] lg:w-[120px] filter invert"
           />
-          <p className="text-[clamp(32px,20px_+_2vw,60px)]">Teppan Garden</p>
+          <p className="text-[clamp(32px,20px_+_2vw,60px)]">{t('footer.brandName')}</p>
         </div>
         <div
           className={`${bitter.variable} font-bitter w-full text-center text-[clamp(16px,4px_+_2vw,20px)]`}

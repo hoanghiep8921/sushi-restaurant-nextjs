@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "menu": "Thực đơn",
+    "atmosphere": "Không gian",
+    "access": "Liên hệ"
+  },
+  "title": {
+    "heading": "Teppan Salad Ann",
+    "subtitle": "Salad hữu cơ & Wagyu nướng Teppanyaki"
+  },
+  "reservation": {
+    "button": "Đặt bàn",
+    "heading": "Đặt bàn",
+    "byPhone": "Đặt bàn qua điện thoại"
+  },
+  "internetReservation": {
+    "button": "Đặt bàn trực tuyến"
+  },
+  "reservationModal": {
+    "heading": "Đặt bàn",
+    "namePlaceholder": "Họ và tên",
+    "phonePlaceholder": "Số điện thoại",
+    "guestsPlaceholder": "Số khách",
+    "guest": "Khách",
+    "guests": "Khách",
+    "timePlaceholder": "Giờ",
+    "submit": "Gửi yêu cầu đặt bàn",
+    "sending": "Đang gửi yêu cầu đặt bàn...",
+    "success": "Cảm ơn bạn! Yêu cầu đặt bàn đã được gửi.",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại."
+  },
+  "saladMenu": {
+    "heading": "Thực đơn Salad",
+    "alt": "Trang thực đơn salad {{page}}"
+  },
+  "preparation": {
+    "text": "Chúng tôi tự hào về quy trình chuẩn bị tỉ mỉ. Mỗi món ăn đều được chế biến từ những nguyên liệu tươi ngon nhất với sự chăm chút tối đa."
+  },
+  "menu": {
+    "heading": "Thực đơn",
+    "mainDishes": "Món chính",
+    "drinks": "Đồ uống",
+    "alt": "Trang thực đơn {{page}}"
+  },
+  "menuItems": {
+    "sushiPlatter": "Sushi Platter",
+    "sashimiDeluxe": "Sashimi Deluxe",
+    "unagiDon": "Unagi Don",
+    "tempuraSet": "Tempura Set",
+    "ramen": "Ramen",
+    "sake": "Sake (chai)",
+    "asahiBeer": "Bia Asahi",
+    "greenTea": "Trà xanh",
+    "oolongTea": "Trà Oolong",
+    "water": "Nước suối"
+  },
+  "testimonials": {
+    "heading": "Đánh giá",
+    "johnName": "Nguyễn Văn A",
+    "johnQuote": "Sushi ngon nhất tôi từng ăn! Cá rất tươi và cơm được nêm nếm hoàn hảo. Tôi chắc chắn sẽ quay lại!",
+    "janeName": "Trần Thị B",
+    "janeQuote": "Một quán ăn tuyệt vời! Không gian ấm cúng và nhân viên rất thân thiện. Sashimi ở đây ngon tuyệt hảo.",
+    "peterName": "Lê Văn C",
+    "peterQuote": "Tôi là khách quen ở đây và chưa bao giờ thất vọng. Chất lượng món ăn luôn xuất sắc. Rất đáng để giới thiệu!"
+  },
+  "atmosphere": {
+    "heading": "Không gian",
+    "text": "Trải nghiệm bầu không khí đích thực của một nhà hàng sushi Nhật Bản truyền thống. Nội thất của chúng tôi được thiết kế để mang lại cảm giác như bạn đang ở giữa lòng Tokyo."
+  },
+  "access": {
+    "address": "Địa chỉ",
+    "enquiry": "Liên hệ",
+    "addressValue": "Số 46 ngõ 52 Tô Ngọc Vân, Tây Hồ, Hà Nội, Việt Nam"
+  },
+  "footer": {
+    "brandName": "Teppan Salad Ann"
+  },
+  "slider": {
+    "alt": "Ảnh Sushi {{number}}"
+  },
+  "sushiTypes": {
+    "heading": "Thực đơn",
+    "saladMenu": {
+      "title": "Thực đơn Salad",
+      "description": "Salad tươi ngon với nước sốt tự làm."
+    },
+    "wagyu": {
+      "title": "Kuroge Wagyu",
+      "description": "Kuroge Wagyu - Thịt bò lông đen Nhật Bản."
+    },
+    "sashimi": {
+      "title": "Sashimi Sushi",
+      "description": "Những lát cá tươi sống chất lượng cao."
+    }
+  }
+}

@@ -1,36 +1,44 @@
+'use client';
+
 // next
 import Image from 'next/image';
 
 // clsx
 import clsx from 'clsx';
 
+// i18n
+import { useTranslation } from 'react-i18next';
+
 // components
 import Reveal from '@/components/common/Reveal';
 
-// sushi types data
-import sushiTypes from '@/data/sushi-types.json';
-
-const sushiTypeContent = {
-  nigiriSushi: {
-    title: 'Nigiri Sushi',
-    description: 'A slice of raw fish over pressed vinegared rice.',
-  },
-  makiRolls: {
-    title: 'Maki Rolls',
-    description: 'Sushi rice and fillings rolled in seaweed.',
-  },
-  sashimiPlatter: {
-    title: 'Sashimi Platter',
-    description: 'Slices of fresh, high-quality raw fish.',
-  },
-};
+// data
+import items from '@/data/sushi-types.json';
 
 const SushiTypes = () => {
+  const { t } = useTranslation();
+
+  const itemContent: Record<string, { title: string; description: string }> = {
+    nigiriSushi: {
+      title: t('sushiTypes.saladMenu.title'),
+      description: t('sushiTypes.saladMenu.description'),
+    },
+    makiRolls: {
+      title: t('sushiTypes.wagyu.title'),
+      description: t('sushiTypes.wagyu.description'),
+    },
+    sashimiPlatter: {
+      title: t('sushiTypes.sashimi.title'),
+      description: t('sushiTypes.sashimi.description'),
+    },
+  };
+
   return (
     <section className="flex flex-col items-center justify-center gap-[24px] py-[24px] md:gap-[48px] md:py-[48px]">
-      <h2 className="sr-only">Sushi Types</h2>
-      {sushiTypes.map((item, i) => {
-        const content = sushiTypeContent[item.title as keyof typeof sushiTypeContent];
+      <h2 className="sr-only">{t('sushiTypes.heading')}</h2>
+      {items.map((item, i) => {
+        const content = itemContent[item.title as keyof typeof itemContent];
+        if (!content) return null;
         return (
           <article
             className={clsx(

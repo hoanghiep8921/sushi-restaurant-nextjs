@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bgGray: '#1e1e1e',
-        bgDarkGray: '#121212',
-        borderGray: '#2d2d2d',
-        accent: '#e03e33',
+        bgGray: '#f5efe0',
+        bgDarkGray: '#ede4d0',
+        borderGray: '#d4c5a8',
+        accent: '#c9952e',
       },
       keyframes: {
         zoom: {

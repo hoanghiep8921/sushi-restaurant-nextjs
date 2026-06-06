@@ -1,10 +1,17 @@
+'use client';
+
 // next
 import Image from 'next/image';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // components
 import Reveal from '@/components/common/Reveal';
 
 const Atmosphere = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="atmosphere"
@@ -14,7 +21,7 @@ const Atmosphere = () => {
         <Reveal effect="scaleUpS">
           <Image
             src="/images/atmosphere/bg.png"
-            alt="Atmosphere"
+            alt={t('atmosphere.heading')}
             width="754"
             height="737"
             sizes="(max-width: 480px) 100vw, 50vw"
@@ -24,10 +31,10 @@ const Atmosphere = () => {
         <Reveal className="max-w-[80%] md:max-w-[460px]" threshold={0.1}>
           <div className="flex flex-col items-center justify-center gap-[32px]">
             <h2 className="text-[clamp(40px,20px_+_3vw,60px)] text-accent">
-              Atmosphere
+              {t('atmosphere.heading')}
             </h2>
             <p className="text-center text-[clamp(24px,4px_+_2vw,28px)] leading-[1.65]">
-              Experience the authentic atmosphere of a traditional Japanese sushi restaurant. Our interior is designed to make you feel as if you are in the heart of Tokyo.
+              {t('atmosphere.text')}
             </p>
           </div>
         </Reveal>

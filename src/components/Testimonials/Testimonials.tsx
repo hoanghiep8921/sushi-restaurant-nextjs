@@ -1,5 +1,10 @@
+'use client';
+
 // next
 import Image from 'next/image';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // components
 import Reveal from '@/components/common/Reveal';
@@ -7,28 +12,27 @@ import Reveal from '@/components/common/Reveal';
 // testimonials data
 import testimonials from '@/data/testimonials.json';
 
-const testimonialContent = {
-  testimonial1: {
-    name: 'John Doe',
-    testimonial:
-      'The best sushi I have ever had! The fish was so fresh and the rice was perfectly seasoned. I will definitely be back!',
-  },
-  testimonial2: {
-    name: 'Jane Smith',
-    testimonial:
-      'A hidden gem! The atmosphere is cozy and the staff is very friendly. The sashimi platter was out of this world.',
-  },
-  testimonial3: {
-    name: 'Peter Jones',
-    testimonial:
-      'I am a regular here and I am never disappointed. The quality of the food is consistently excellent. Highly recommended!',
-  },
-};
-
 const Testimonials = () => {
+  const { t } = useTranslation();
+
+  const testimonialContent: Record<string, { name: string; testimonial: string }> = {
+    testimonial1: {
+      name: t('testimonials.johnName'),
+      testimonial: t('testimonials.johnQuote'),
+    },
+    testimonial2: {
+      name: t('testimonials.janeName'),
+      testimonial: t('testimonials.janeQuote'),
+    },
+    testimonial3: {
+      name: t('testimonials.peterName'),
+      testimonial: t('testimonials.peterQuote'),
+    },
+  };
+
   return (
     <section className="mx-auto flex max-w-[95%] flex-col items-center justify-evenly gap-[48px] py-[48px] md:flex-row md:gap-[16px] xl:justify-center xl:gap-[48px]">
-      <h2 className="sr-only">Testimonials</h2>
+      <h2 className="sr-only">{t('testimonials.heading')}</h2>
       {testimonials.map((testimonial, i) => {
         const content = testimonialContent[testimonial.id as keyof typeof testimonialContent];
         return (

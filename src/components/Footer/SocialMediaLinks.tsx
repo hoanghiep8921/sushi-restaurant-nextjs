@@ -16,7 +16,7 @@ const SocialMediaLinks = () => {
           target="_blank"
           key={i}
           title={socialMedia.id}
-          className="flex aspect-square w-[54px] items-center justify-center rounded-full border-[1px] border-borderGray bg-accent text-[36px] transition-all duration-300 hover:bg-white hover:text-black"
+          className="flex aspect-square w-[54px] items-center justify-center rounded-full border-[1px] border-borderGray bg-accent text-[36px] transition-all duration-300 hover:bg-white hover:text-gray-900"
         >
           <SocialMediaIcon id={socialMedia.id} />
         </Link>

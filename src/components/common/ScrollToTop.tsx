@@ -33,7 +33,7 @@ const ScrollToTop = ({ triggerAt = 100 }: ScrollToTopProps) => {
     <button
       ref={ref}
       aria-label="Back to top"
-      className="hover:brighness-110 fixed bottom-4 right-4 z-20 hidden aspect-square w-[48px] items-center justify-center rounded-full border-[1px] border-borderGray bg-bgDarkGray text-white opacity-0 transition-all duration-500 hover:bg-accent lg:flex xl:bottom-10 xl:right-10"
+      className="hover:brighness-110 fixed bottom-4 right-4 z-20 hidden aspect-square w-[48px] items-center justify-center rounded-full border-[1px] border-borderGray bg-bgDarkGray text-gray-800 opacity-0 transition-all duration-500 hover:bg-accent lg:flex xl:bottom-10 xl:right-10"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <FaArrowUp size={24} />

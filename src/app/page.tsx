@@ -10,15 +10,15 @@ const loading = () => <Loading />;
 // components / sections
 import Header from '@/components/Header/Header';
 const ScrollToTop = dynamic(() => import('@/components/common/ScrollToTop'));
-const SushiTypes = dynamic(() => import('@/components/SushiTypes/SushiTypes'), {
+const FoodMenu = dynamic(() => import('@/components/SushiTypes/SushiTypes'), {
   loading,
 });
-const Preparation = dynamic(
+{/* const Preparation = dynamic(
   () => import('@/components/Preparation/Preparation'),
   {
     loading,
   },
-);
+); */}
 const Menu = dynamic(() => import('@/components/Menu/Menu'), {
   loading,
 });
@@ -49,10 +49,10 @@ function HomeComponent() {
     <>
       <Header />
       <main>
-        <SushiTypes />
-        <Preparation />
+        <FoodMenu />
+{/* <Preparation /> */}
         <Menu />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Atmosphere />
         <Reservation />
         <Access />

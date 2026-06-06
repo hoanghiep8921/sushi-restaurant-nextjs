@@ -10,6 +10,9 @@ import '@/styles/globals.css';
 // fonts
 import { bitter } from '@/ui/fonts';
 
+// i18n provider
+import I18nProvider from '@/components/common/I18nProvider';
+
 // metadata
 export const metadata: Metadata = {
   title: 'Sushi Doshira by Rashid Shamloo',
@@ -59,11 +62,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={clsx(
-          'bg-bgGray text-white',
+          'bg-bgGray text-gray-900',
           bitter.className,
         )}
       >
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

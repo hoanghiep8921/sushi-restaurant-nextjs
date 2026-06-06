@@ -1,5 +1,10 @@
+'use client';
+
 // clsx
 import clsx from 'clsx';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // components
 import ReservationButton from './ReservationButton';
@@ -11,6 +16,8 @@ import { navHover } from '@/styles/navHover';
 import menu from '@/data/navigation-menu.json';
 
 const DesktopMenu = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="hidden md:block">
       <h2 className="sr-only">Navigation Menu</h2>
@@ -24,7 +31,7 @@ const DesktopMenu = () => {
                 navHover,
               )}
             >
-              {item}
+              {t(`nav.${item}`)}
             </a>
             <div className="aspect-square w-2 select-none rounded-full bg-accent" />
           </li>

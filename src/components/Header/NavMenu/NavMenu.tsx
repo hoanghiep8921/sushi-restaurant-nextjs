@@ -31,7 +31,7 @@ const NavMenu = () => {
           <MobileMenu setIsMobileMenuOpen={setIsMobileMenuOpen} />
         )}
       </AnimatePresence>
-      <div className="absolute top-0 flex min-h-[42px] w-full items-center justify-between bg-black/40 px-4 text-[clamp(1rem,2vw,1.5rem)] text-white md:min-h-[64px] md:px-8 2xl:px-12">
+      <div className="absolute top-0 flex min-h-[42px] w-full items-center justify-between bg-[#1a1008]/40 px-4 text-[clamp(1rem,2vw,1.5rem)] text-white md:min-h-[64px] md:px-8 2xl:px-12">
         {/* Left side */}
         <div className="flex items-center gap-4">
           <div className="z-10 md:hidden">

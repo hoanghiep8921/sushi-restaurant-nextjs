@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "atmosphere": "Atmosphere",
+    "access": "Access"
+  },
+  "title": {
+    "heading": "Teppan Salad Ann",
+    "subtitle": "Organic salads & Wagyu grilled on Teppanyaki"
+  },
+  "reservation": {
+    "button": "Reservation",
+    "heading": "Reservation",
+    "byPhone": "Reservation by phone"
+  },
+  "internetReservation": {
+    "button": "Internet Reservation"
+  },
+  "reservationModal": {
+    "heading": "Make a Reservation",
+    "namePlaceholder": "Your Name",
+    "phonePlaceholder": "Phone Number",
+    "guestsPlaceholder": "Guests",
+    "guest": "Guest",
+    "guests": "Guests",
+    "timePlaceholder": "Time",
+    "submit": "Submit Reservation",
+    "sending": "Sending your reservation...",
+    "success": "Thank you! Your reservation has been sent.",
+    "error": "An unexpected error occurred. Please try again."
+  },
+  "saladMenu": {
+    "heading": "Salad Menu",
+    "alt": "Salad menu page {{page}}"
+  },
+  "preparation": {
+    "text": "We take pride in our meticulous preparation. Every dish is crafted with the freshest ingredients and the utmost care."
+  },
+  "menu": {
+    "heading": "Menu",
+    "mainDishes": "Main Dishes",
+    "drinks": "Drinks",
+    "alt": "Menu page {{page}}"
+  },
+  "menuItems": {
+    "sushiPlatter": "Sushi Platter",
+    "sashimiDeluxe": "Sashimi Deluxe",
+    "unagiDon": "Unagi Don",
+    "tempuraSet": "Tempura Set",
+    "ramen": "Ramen",
+    "sake": "Sake (bottle)",
+    "asahiBeer": "Asahi Beer",
+    "greenTea": "Green Tea",
+    "oolongTea": "Oolong Tea",
+    "water": "Water"
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "johnName": "John Doe",
+    "johnQuote": "The best sushi I have ever had! The fish was so fresh and the rice was perfectly seasoned. I will definitely be back!",
+    "janeName": "Jane Smith",
+    "janeQuote": "A hidden gem! The atmosphere is cozy and the staff is very friendly. The sashimi platter was out of this world.",
+    "peterName": "Peter Jones",
+    "peterQuote": "I am a regular here and I am never disappointed. The quality of the food is consistently excellent. Highly recommended!"
+  },
+  "atmosphere": {
+    "heading": "Atmosphere",
+    "text": "Experience the authentic atmosphere of a traditional Japanese sushi restaurant. Our interior is designed to make you feel as if you are in the heart of Tokyo."
+  },
+  "access": {
+    "address": "Address",
+    "enquiry": "Enquiry",
+    "addressValue": "No. 46 lane 52 To Ngoc Van Tay Ho Hanoi, Hanoi, Vietnam"
+  },
+  "footer": {
+    "brandName": "Teppan Salad Ann"
+  },
+  "slider": {
+    "alt": "Sushi Image {{number}}"
+  },
+  "sushiTypes": {
+    "heading": "Food Menu",
+    "saladMenu": {
+      "title": "Salad Menu",
+      "description": "Fresh and healthy salads with homemade dressing."
+    },
+    "wagyu": {
+      "title": "Kuroge Wagyu",
+      "description": "Kuroge Wagyu - Japanese Black Hair beef."
+    },
+    "sashimi": {
+      "title": "Sashimi Sushi",
+      "description": "Slices of fresh, high-quality raw fish."
+    }
+  }
+}

@@ -1,7 +1,14 @@
+'use client';
+
 // clsx
 import clsx from 'clsx';
 
+// i18n
+import { useTranslation } from 'react-i18next';
+
 const Title = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="pointer-events-none absolute left-[5%] top-1/2 z-[1] flex -translate-y-1/2 select-none flex-col gap-1 text-white drop-shadow-md md:left-[10%] md:top-[40%] md:gap-4">
       <h1
@@ -10,7 +17,7 @@ const Title = () => {
           'text-[clamp(1.5rem,1rem_+_4vw,5.25rem)]',
         )}
       >
-        Teppan Garden
+        {t('title.heading')}
       </h1>
       <p
         className={clsx(
@@ -18,7 +25,7 @@ const Title = () => {
           'text-[clamp(1rem,0.5rem_+_2vw,3rem)]',
         )}
       >
-        Organic salads & Wagyu grilled on Teppanyaki
+        {t('title.subtitle')}
       </p>
     </div>
   );

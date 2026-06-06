@@ -1,8 +1,13 @@
+'use client';
+
 // next
 import Image from 'next/image';
 
 // react
 import { useRef, useEffect } from 'react';
+
+// i18n
+import { useTranslation } from 'react-i18next';
 
 // swiper
 import { Swiper, SwiperSlide, SwiperClass } from 'swiper/react';
@@ -24,6 +29,7 @@ import 'swiper/css/effect-fade';
 import { numberOfSlides } from '@/settings/slider';
 
 const Slider = () => {
+  const { t } = useTranslation();
   const slideRefs = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
@@ -67,7 +73,7 @@ const Slider = () => {
             }}
             src={`/images/header/${String(i + 1).padStart(2, '')}.png`}
             fill
-            alt={`Sushi Image ${i + 1}`}
+            alt={t('slider.alt', { number: i + 1 })}
             sizes="100vw"
             priority={i === 0}
             className="object-cover will-change-transform"

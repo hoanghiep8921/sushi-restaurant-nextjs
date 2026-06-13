@@ -18,6 +18,15 @@ const Menu = () => {
     return `/images/menu/${i + 4}.jpg`;
   }).filter((src) => src !== '/images/menu/10.jpg');
 
+  const lunchImages = [
+    '/images/image/lunch3.png',
+    '/images/image/lunch1.png',
+    '/images/image/lunch2.png',
+  ];
+
+  const allMenuImages = [...menuImages];
+  allMenuImages.splice(6, 0, ...lunchImages);
+
   return (
     <section
       id="menu"
@@ -53,7 +62,7 @@ const Menu = () => {
           loop={true}
           className="!pb-[48px]"
         >
-          {menuImages.map((src, i) => (
+          {allMenuImages.map((src, i) => (
             <SwiperSlide key={i}>
               <div className="mx-auto w-full md:w-5/6 lg:w-3/4">
                 <Image

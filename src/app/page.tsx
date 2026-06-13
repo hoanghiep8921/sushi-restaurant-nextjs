@@ -50,7 +50,7 @@ function HomeComponent() {
       <Header />
       <main>
         <FoodMenu />
-{/* <Preparation /> */}
+        {/* <Preparation /> */}
         <Menu />
         {/* <Testimonials /> */}
         <Atmosphere />

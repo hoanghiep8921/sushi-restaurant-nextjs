@@ -15,7 +15,7 @@
     "framer-motion": "^12.23.12",
     "hamburger-react": "^2.5.0",
     "i18next": "^26.3.1",
-    "next": "^15.4.6",
+    "next": "15.4.10",
     "nodemailer": "^7.0.5",
     "react": "^19.1.1",
     "react-device-detect": "^2.2.3",

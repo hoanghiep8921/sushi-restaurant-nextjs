@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'rashid shamloo',
   ],
   icons: { icon: '/images/favicon.png' },
-  metadataBase: new URL('https://sushi-restaurant.rashidshamloo.com'),
+  metadataBase: new URL('https://teppan-salad-ann.vercel.app'),
   openGraph: {
     type: 'website',
     locale: 'en_US',

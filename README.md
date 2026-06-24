@@ -4,13 +4,13 @@
 
 This is the website for a Japanese sushi restaurant called Sushi Doshira (鮨どしら) that showcases my ability to design responsive layouts and implement them using component-based frameworks (React.js/Next.js) with internationalization (i18n), SEO optimization, animations, and accessibility features.
 
-Live Demo: [https://sushi-restaurant.rashidshamloo.com/](https://sushi-restaurant.rashidshamloo.com/)
+Live Demo: [https://Teppan Salad Ann.rashidshamloo.com/](https://Teppan Salad Ann.rashidshamloo.com/)
 
 ## Responsive Design
 
 I designed a responsive layout for mobile and desktop using Figma (and Photoshop for the logo) and implemented the design using TypeScript, React.js/Next.js, and Tailwind CSS making sure it works properly on different screen sizes in both English and Japanese versions.
 
-Design: [Behance](https://www.behance.net/gallery/184447629/Japanese-Sushi-Restaurant-Website-Design)
+Design: [Behance](https://www.behance.net/gallery/184447629/Japanese-Teppan Salad Ann-Website-Design)
 
 ## Customizability
 

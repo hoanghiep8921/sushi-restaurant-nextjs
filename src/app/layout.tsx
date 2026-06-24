@@ -15,15 +15,14 @@ import I18nProvider from '@/components/common/I18nProvider';
 
 // metadata
 export const metadata: Metadata = {
-  title: 'Sushi Doshira by Rashid Shamloo',
-  description: 'Japanese Sushi Restaurant Website by Rashid Shamloo',
+  title: 'Japanese Teppan Salad Ann',
+  description: 'Japanese Teppan Salad Ann',
   keywords: [
-    'sushi',
+    'salad',
     'restaurant',
     'japanese',
     'japanese restaurant',
-    'sushi restaurant',
-    'rashid shamloo',
+    'salad restaurant',
   ],
   icons: { icon: '/images/favicon.png' },
   metadataBase: new URL('https://teppan-salad-ann.vercel.app'),
@@ -31,12 +30,12 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Sushi Doshira by Rashid Shamloo',
-    siteName: 'Sushi Doshira by Rashid Shamloo',
-    description: 'Japanese Sushi Restaurant Website by Rashid Shamloo',
+    title: 'Japanese Teppan Salad Ann',
+    siteName: 'Japanese Teppan Salad Ann',
+    description: 'Japanese Teppan Salad Ann',
     images: {
       url: '/images/screenshots/home.webp',
-      alt: 'Sushi Doshira by Rashid Shamloo',
+      alt: 'Japanese Teppan Salad Ann',
       width: 1200,
       height: 654,
       type: 'image/webp',
@@ -45,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sushi Doshira by Rashid Shamloo',
-    description: 'Japanese Sushi Restaurant Website by Rashid Shamloo',
+    title: 'Japanese Teppan Salad Ann',
+    description: 'Japanese Teppan Salad Ann',
     images: '/images/screenshots/home.webp',
     creator: '@rashidshamloo',
     site: '@rashidshamloo',

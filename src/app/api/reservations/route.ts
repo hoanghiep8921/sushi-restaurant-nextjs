@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"Sushi Restaurant" <${process.env.EMAIL_SERVER_USER}>`,
+      from: `"Japanese Teppan Salad Ann" <${process.env.EMAIL_SERVER_USER}>`,
       to: process.env.EMAIL_TO,
       subject: "New Table Reservation",
       html: `
